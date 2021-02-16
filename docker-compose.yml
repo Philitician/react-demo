@@ -1,0 +1,16 @@
+version: '3.7'
+
+services: 
+  nginx-proxy:
+    container_name: nginx-proxy
+    image: nginx
+    depends_on:
+      - react-app
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+
+  react-app:
+    image: philitician/react-app:latest
+    container_name: react-app

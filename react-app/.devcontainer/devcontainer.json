@@ -1,0 +1,23 @@
+{
+    "name": "React Docker Environment",
+    "dockerFile": "Dockerfile",
+    "appPort": [3000],
+    "settings": {
+        // "workbench.colorTheme": "Cobalt2",
+         "terminal.integrated.shell.linux":"/bin/zsh",
+        // "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+        "workbench.colorTheme": "Rider dark",
+        "editor.fontFamily": "'Fira Code Medium', 'Noto Mono', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+        "editor.fontLigatures": true,
+        "editor.fontSize": 13,
+        "workbench.iconTheme": "material-icon-theme"
+    },
+    "postCreateCommand": "npm install",
+    "extensions": [
+		"esbenp.prettier-vscode",
+        //"wesbos.theme-cobalt2",
+        "muhammad-sammy.rider-theme",
+		"rvest.vs-code-prettier-eslint",
+		"dbaeumer.vscode-eslint"
+	]
+}

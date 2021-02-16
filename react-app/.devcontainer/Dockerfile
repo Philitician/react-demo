@@ -1,4 +1,4 @@
-FROM node:15.8.0
+FROM node:lts
 
 RUN npm install -g prettier
 RUN npm install -g eslint

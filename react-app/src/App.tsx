@@ -1,12 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './Header';
+import React, { useEffect, useState } from 'react';
+import './assets/styles/App.css';
+import Header from './components/Header';
+import List from './components/List'
 
-function App() {
+const App: React.FC = () => {
+  const [list, setList] = useState([]);
+
+
   return (
     <div className="App">
       <Header/>
+      <List/>
     </div>
   );
 }

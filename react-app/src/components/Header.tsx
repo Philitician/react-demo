@@ -1,20 +1,11 @@
 import React, { useState } from 'react'
 
-
-interface HeaderProps {
+type HeaderProps = {
     buttonText?: string;
 }
 
-interface Movie {
-    title: string;
-    date: string;
-    rating: string;
-    description: string;
-}
-
-export default function Header({buttonText}: HeaderProps) {
+const Header = ({buttonText}: HeaderProps): JSX.Element  => {
     const [count, setCount] = useState(0);
-    const [movies, setMovies] = useState<Movie | null>(null)
 
     const increment = () => {
         setCount(count + 1);
@@ -28,3 +19,5 @@ export default function Header({buttonText}: HeaderProps) {
         </div>
     )
 }
+
+export default Header;

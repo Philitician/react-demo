@@ -1,7 +1,7 @@
 {
     "name": "React Docker Environment",
     "dockerFile": "Dockerfile",
-    "appPort": [3000],
+    "appPort": [3333],
     "settings": {
         //"workbench.colorTheme": "Cobalt2",
         "terminal.integrated.shell.linux":"/bin/zsh",

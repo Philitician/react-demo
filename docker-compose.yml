@@ -4,9 +4,13 @@ services:
   react-app:
     image: philitician/react-app:latest
     container_name: react-app
+    build: 
+      context: react-app
+      dockerfile: NoNginx.Dockerfile
   nginx: 
     image: philitician/nginx-react
     container_name: nginx
+    build: nginx
     ports:
     - 80:80
     # volumes:

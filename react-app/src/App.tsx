@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <p>Changes after switching to ACR</p>
+      <p>Super new CI/CD change with ACR</p>
       <Header/>
       <List/>
     </div>

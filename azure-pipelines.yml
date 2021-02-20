@@ -14,7 +14,7 @@ steps:
     displayName: Build images
     inputs:
       containerregistrytype: 'Container Registry'
-      dockerRegistryEndpoint: 'DockerHub'
+      dockerRegistryEndpoint: 'AzureContainerRegistry'
       dockerComposeFile: 'docker-compose.yml'
       action: 'Build services'
       includeLatestTag: true
@@ -22,7 +22,7 @@ steps:
     displayName: Push images
     inputs:
       containerregistrytype: 'Container Registry'
-      dockerRegistryEndpoint: 'DockerHub'
+      dockerRegistryEndpoint: 'AzureContainerRegistry'
       dockerComposeFile: 'docker-compose.yml'
       action: 'Push services'
       includeLatestTag: true

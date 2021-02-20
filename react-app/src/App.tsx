@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <p>Simple changes to web app for containers</p>
+      <p>WHAT IS UP Y'ALL</p>
       <Header/>
       <List/>
     </div>

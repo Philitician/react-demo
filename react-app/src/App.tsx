@@ -9,7 +9,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <p>WHAT IS UP Y'ALL</p>
+      <p>Changes after switching to ACR</p>
       <Header/>
       <List/>
     </div>

@@ -2,13 +2,13 @@ version: '3.7'
 
 services: 
   react-app:
-    image: philitician/react-app:latest
+    image: myreactregistry.azurecr.io/react-app:latest
     container_name: react-app
     build: 
       context: react-app
       dockerfile: NoNginx.Dockerfile
   nginx: 
-    image: philitician/nginx-react
+    image: myreactregistry.azurecr.io/nginx-react
     container_name: nginx
     build: nginx
     ports:

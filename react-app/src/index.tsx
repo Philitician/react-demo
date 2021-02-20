@@ -4,10 +4,6 @@ import './assets/styles/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// LogRocket
-import LogRocket from 'logrocket';
-LogRocket.init('6okzzt/logrocketdemo');
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
